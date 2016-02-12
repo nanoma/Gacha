@@ -34,11 +34,12 @@ class ResultViewController: UIViewController {
         UIImage(named: "monster010.png")!
         ]
         
+        
         monsterImageView.image = monsterArray[number]
         
         if number == 9{
             haikeiImageView.image = UIImage(named: "bg_gold.png")
-        } else if number >= 6{
+        } else if number > 6{
             haikeiImageView.image = UIImage(named: "bg_red.png")
         } else {
             haikeiImageView.image = UIImage(named: "bg_blue.png")
